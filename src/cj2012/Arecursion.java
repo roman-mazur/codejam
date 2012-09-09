@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class Arecursion {
 
-	// cannot solve large problem
-	
+  // cannot solve large problem
+
   public static void main(final String[] args) throws Exception {
 
     final Scanner scanner = new Scanner(new FileReader("A-large-practice.in"));
@@ -18,9 +18,9 @@ public class Arecursion {
 
     final int t = scanner.nextInt();
 
-	long start = System.currentTimeMillis();
+    long start = System.currentTimeMillis();
 
-	for (int i = 0; i < t; i++) {
+    for (int i = 0; i < t; i++) {
 
       final int n = scanner.nextInt();
       final int[] d = new int[n];
@@ -38,9 +38,9 @@ public class Arecursion {
       out.write("Case #" + (i + 1) + ": " + solution + "\n");
     }
 
-	System.out.println(System.currentTimeMillis() - start);
+    System.out.println(System.currentTimeMillis() - start);
 
-	out.close();
+    out.close();
     scanner.close();
 
   }
